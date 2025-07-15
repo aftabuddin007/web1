@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fa-solid fa-book" type="image/x-icon">
+    
+
+    <title> BookStore - Simple Online Bookstore</title>
+    <link rel="shortcut icon" href="./images/icon2.svg" type="image/x-icon">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-book"></i>
+                <h1>BookBazaar</h1>
+            </div>
+            
+            <nav class="nav">
+                <a href="#home">Home</a>
+                <a href="#books">Books</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            
+            <div class="header-actions">
+                <div class="search-box">
+                    <input type="text" placeholder="Search books...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="auth-links">
+                    <a href="login.html" class="auth-link">
+                        <i class="fas fa-sign-in-alt"></i> Login
+                    </a>
+                    <a href="register.html" class="auth-link">
+                        <i class="fas fa-user-plus"></i> Register
+                    </a>
+                </div>
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Discover Amazing Books</h2>
+                <p>Find your next favorite book from our carefully curated collection</p>
+                <a href="#books" class="btn-primary">Explore Books</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/WhatsApp Image 2025-07-15 at 5.51.32 PM.jpeg" alt="Books">
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Rated Books -->
+    <section id="top-rated" class="top-rated-books">
+        <div class="container">
+            <h2 class="section-title">Top Rated Books</h2>
+            <p class="section-subtitle">Our customers' favorite picks</p>
+            <div class="rotating-books">
+                <div class="book-carousel">
+                    <div class="book-slide active">
+                        <div class="book-card featured">
+                            <img src="images/WhatsApp Image 2025-07-15 at 5.51.42 PM.jpeg" alt="Top Book 1">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>5.0</span>
+                            </div>
+                            <h3>গোয়েন্দা কবলে মুগ্ধ</h3>
+                            <p class="author">আমিরুল মোমেনীন মানিক</p>
+                            <p class="price">২১৫ টাকা</p>
+                            <a href="cart.html" class="btn-secondary">Add to Cart</a>
+                        </div>
+                    </div>
+                    
+                    <div class="book-slide">
+                        <div class="book-card featured">
+                            <img src="images/WhatsApp Image 2025-07-15 at 5.51.45 PM.jpeg" alt="Top Book 2">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                            <h3>আমাজনিয়া</h3>
+                            <p class="author">ণিপুন রয়</p>
+                            <p class="price">৩০০ টাকা
+</p>
+                            <a href="cart.html" class="btn-secondary">Add to Cart</a>
+                        </div>
+                    </div>
+                    
+                    <div class="book-slide">
+                        <div class="book-card featured">
+                            <img src="images/WhatsApp Image 2025-07-15 at 5.51.41 PM (1).jpeg" alt="Top Book 3">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                            <h3>জিম করবেট অমনিবাস</h3>
+                            <p class="author"> রাতুল খান </p>
+                            <p class="price">৯৪১ টাকা</p>
+                            <a href="cart.html" class="btn-secondary">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-indicators">
+                    <span class="indicator active"></span>
+                    <span class="indicator"></span>
+                    <span class="indicator"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Books -->
+    <section id="books" class="featured-books">
+        <div class="container">
+            <h2 class="section-title">Featured Books</h2>
+            <div class="books-grid">
+                <div class="book-card">
+                    <img src="images/WhatsApp Image 2025-07-15 at 5.51.33 PM.jpeg" alt="Book 1">
+                    <h3>সবুজ পাতার বন</h3>
+                    <p class="author">শাইখ আব্দুল</p>
+                    <p class="price">৩০০ টাকা</p>
+                    <a href="cart.html" class="btn-secondary">Add to Cart</a>
+                </div>
+                
+                <div class="book-card">
+                    <img src="images/WhatsApp Image 2025-07-15 at 5.51.36 PM.jpeg" alt="Book 2">
+                    <h3>বাংলা বই</h3>
+                    <p class="author">স্বপন বসু</p>
+                    <p class="price">২৭৮ টাকা </p>
+                    <a href="cart.html" class="btn-secondary">Add to Cart</a>
+                </div>
+                
+                <div class="book-card">
+                    <img src="images/WhatsApp Image 2025-07-15 at 5.51.40 PM.jpeg" alt="Book 3">
+                    <h3>বিয়িং</h3>
+                    <p class="author">আব্দুল মান্নান</p>
+                    <p class="price">৪৪২ টাকা</p>
+                    <a href="cart.html" class="btn-secondary">Add to Cart</a>
+                </div>
+                
+                <div class="book-card">
+                    <img src="images/WhatsApp Image 2025-07-15 at 5.51.41 PM.jpeg" alt="Book 4">
+                    <h3>মুক্তার মালা</h3>
+                    <p class="author">সত্রার মির্জা
+</p>
+                    <p class="price">২৭৮ টাকা</p>
+                    <a href="cart.html" class="btn-secondary">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <p>We are passionate about connecting readers with amazing books. Our curated collection features the best titles across various genres.</p>
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-shipping-fast"></i>
+                        <h3>Fast Delivery</h3>
+                        <p>Get your books delivered quickly</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-book-open"></i>
+                        <h3>Quality Books</h3>
+                        <p>Curated collection of amazing books</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-users"></i>
+                        <h3>Community</h3>
+                        <p>Join our community of book lovers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@bookstore.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+880 1844321676</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span> Mirpur1201 washamor,Dhaka</span>
+                    </div>
+                </div>
+                <form class="contact-form" action="#" method="post">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>BookStore</h3>
+                    <p>Your favorite online bookstore</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#books">Books</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BookStore. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
