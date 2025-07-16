@@ -113,7 +113,7 @@
     border-radius: 3px;
 }
 
-.remove-btn {
+/*.remove-btn {
     background: #e74c3c;
     color: white;
     border: none;
@@ -121,6 +121,10 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s;
+}*/
+
+.btn-description{
+    margin-bottom: 20px;
 }
 
 .remove-btn:hover {

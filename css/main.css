@@ -57,6 +57,9 @@ body {
     font-size: 1.8rem;
     font-weight: bold;
 }
+.hero-content a{
+    text-decoration: none;
+}
 
 .nav {
     display: flex;
